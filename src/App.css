@@ -1,38 +1,76 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  background: aliceblue;
+  border: 1px solid gainsboro;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  position: relative;
+  padding: 10px;
+  background: white;
+  border-radius: 3px;
+  border-bottom: 5px solid gold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  width: 70%;
+  border: none;
+  background: aliceblue;
+  padding: 5px;
+  font-weight: 500;
+  font-family: cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li {
+  list-style: none;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  max-width: 300px;
   color: white;
+  background: #474747;
+  border-radius: 3px;
+  border-bottom: 5px solid black;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.del {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 20px;
+  top: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+svg {
+  width: 26px;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+
+.box {
+  position: relative;
+}
+
+/* svg#delete {
+  left: 105%;
+  z-index: 200;
+  position: absolute;
+  top: 25%;
+} */
+
+li.active {
+  font-weight: 300;
+  opacity: 0.5;
+  text-decoration: line-through;
 }
